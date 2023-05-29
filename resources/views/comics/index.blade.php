@@ -24,7 +24,7 @@
                     <th scope="row">{{ $comic->id }}</th>
                     <td>{{ $comic->title }}</td>
                     <td>{{ $comic->price }}</td>
-                    <td>{{ $comic->series }}</td>ù
+                    <td>{{ $comic->series }}</td>
                     <td>{{ $comic->type }}</td>
                     <td>
                         <a class="btn btn-success" href="{{ route('comics.show', $comic->id) }}">
