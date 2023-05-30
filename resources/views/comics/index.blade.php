@@ -30,6 +30,9 @@
                         <a class="btn btn-success" href="{{ route('comics.show', $comic->id) }}">
                             <i class="fa-solid fa-eye"></i>
                         </a>
+                        <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
                     </td>
                 </tr>
             @endforeach
