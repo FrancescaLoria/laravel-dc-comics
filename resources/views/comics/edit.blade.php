@@ -28,7 +28,7 @@
         </div>
         <div class="mb-3">
             <label for="sale_date" class="form-label">Data</label>
-            <input type="text" class="form-control" id="sale_date" name="sale_date" placeholder="Inserire la data" value="{{ $comic->sale_date }}">
+            <input type="date" class="form-control" id="sale_date" name="sale_date" placeholder="Inserire la data" value="{{ $comic->sale_date }}">
         </div>
         <div class="mb-3">
             <label for="type" class="form-label">Tipo</label>

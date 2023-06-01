@@ -33,6 +33,13 @@
                         <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}">
                             <i class="fa-regular fa-pen-to-square"></i>
                         </a>
+                        <form class="d-inline-block" action="{{ route('comics.destroy', $comic->id )}}" method="POST">
+                            @method('DELETE')
+                            @csrf
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </form>
                     </td>
                 </tr>
             @endforeach
