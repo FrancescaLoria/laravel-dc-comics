@@ -33,4 +33,20 @@ class StoreComicRequest extends FormRequest
             'type' => 'required|string|min:5|max:30',
         ];
     }
+
+        /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'title.required' => 'A title is required',
+            'price.required' => 'A price is required',
+            'series.required' => 'A series is required',
+            'dale_date.required' => 'A sale_date is required',
+            'type.required' => 'A type is required',
+        ];
+    }
 }
